@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\HTML practice"
+		},
+		{
+			"path": "..\\..\\..\\April-2022\\javascript-basic-projects-master\\html-css-mini-projects-main"
+		},
+		{
+			"path": "..\\..\\..\\April-2022\\javascript-basic-projects-master\\javascript-basic-projects-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "codekaro"
+	}
+}
