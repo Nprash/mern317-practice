@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* *,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: red; */
+    /* place-items: center ; */
+    margin: 50px;
+    border:orange
+
+}
+
+.card{
+    width: 100%;
+    border:2px solid lightgray;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    /* margin-left: 20px; */
+}
+
+.pic{
+    width: 180px;
+    height: 270px;
+    border-radius: 16px;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: baseline;
+    margin: 10px;
+}
+
+.card-body h1{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: -0px;
+    
+}
+
+.card-body{
+    margin-left: 20px;
+    display: grid;
+    justify-content: center;
+    text-align: flex-start;
+}
+
+span{
+    background: #FFB830;
+    padding: 3px 5px;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.offer p{
+    font-style: bold;
+    font-weight: bolder;
+    /* font-weight: 600; */
+}
+
+
+.offer del{
+    color: gray;
+}
+
+.btn-1{
+    background:black;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+.btn-2{
+    background: #fff;
+    color: #222;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 500;
+}
