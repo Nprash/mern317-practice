@@ -261,8 +261,20 @@
         </div>
     </div>
 
-    <div class="login-container">
 
+    <!-- for login form -->
+    <div class="login-container">
+        <img src="logo.png" alt="logo" class="logo-img">
+        <div class="login-card">
+            <h2>Wlecome Back !</h2>
+            <input type="email" placeholder="Enter Your Email">
+            <input type="password" placeholder="Enter Your password">
+            <div class="link-1 link-2"><a href="#">forget password?</a>
+                <a href="#"> sign up</a>
+            </div>
+            <button class="login-btn">Login Now</button>
+            <p class="small"> By logging in you agree to our terms & conditions</p>
+        </div>
     </div>
 
 
@@ -272,9 +284,9 @@
     <script>
         const navToggle = document.querySelector(".nav-toggle");
         const links = document.querySelector(".links")
-        navToggle.addEventListener("click", function(){
+        navToggle.addEventListener("click", function () {
             links.classList.toggle("show-links");
-        })
+        });
     </script>
 </body>
 
