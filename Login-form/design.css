@@ -39,7 +39,7 @@ body{
 }
 
 .input-feild:focus{
-    /* outline: none;  which removes outline of the input feild */
+    outline: none;  /*which removes outline of the input feild */
 }
 
 .btn{
