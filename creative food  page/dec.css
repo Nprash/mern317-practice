@@ -243,7 +243,7 @@ nav {
 }
 
 .btns{
-    background-color: rgb(209, 202, 202);
+    background-color: tomato;
     color: #222;
     border: none;
     cursor: pointer;
@@ -251,11 +251,13 @@ nav {
     padding: 5px 8px;
     border-radius: 12px;
     transition: all 0.3s linear;
+    font-weight: 500;
 }
 .btns:hover{
-    background-color: rgb(143, 79, 58);
-    color: white;
+    background-color: rgb(209, 202, 202);
+    color: #222;
     transform: scale(0.889);
+    font-weight: 500;
 }
 
 .card:after{
