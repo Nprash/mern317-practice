@@ -14,29 +14,33 @@
     <nav>
         <div class="nav-bar">
 
-            <div class="left">
-                <p><a href="#" class="logo"> Hungry!</a></p>
-                <ul class="links">
-                    <li><a href="https://www.facebook.com/" class="link">Veg</a></li>
-                    <li><a href="#" class="link">Non-Veg</a></li>
-                    <li><a href="#" class="link">Cool-Drinks</a></li>
-                    <li><a href="#" class="link">Fruit Juices</a></li>
-
-                </ul>
+            <div class="nav-header">
+                <a href="#" class="logo">
+                    <h1>Hungry!</h1>
+                </a>
+                <button class="nav-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
 
-            <div class="right">
-                <ul class="links ds">
-                    <li><a href="#" class="link"><i class="bi bi-person-circle" title="Login"></i></a></li>
-                    <li><a href="#" class="link">Sign Up</a></li>
-                </ul>
-            </div>
+            <ul class="links">
+                <li><a href="https://www.facebook.com/" class="link">Veg</a></li>
+                <li><a href="#" class="link">Non-Veg</a></li>
+                <li><a href="#" class="link">Cool-Drinks</a></li>
+                <li><a href="#" class="link">Fruit Juices</a></li>
+                <li><a href="#" class="link"><i class="bi bi-person-circle" title="Login"></i></a></li>
+                <li><a href="#" class="link">Sign Up</a></li>
+            </ul>
+
+
         </div>
     </nav>
 
     <div class="bg-container">
         <div class="content">
-            <h1 class="title">Don't have time to Cook? <h3 class="h3tag" style="color:#fff">we are here to make your dish</h3></h1>
+            <h1 class="title">Don't have time to Cook? <h3 class="h3tag" style="color:#fff">we are here to make your
+                    dish</h3>
+            </h1>
             <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Aliquid beatae
                 pariatur fugiat a, consectetur dolorum architecto cupiditate unde</p>
             <div class="btn"><button class="bag-btn">Order Now</button></div>
@@ -60,7 +64,7 @@
                 <h3> chicken burger</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
 
 
@@ -74,7 +78,7 @@
                 <h3> Noodles</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
 
 
@@ -87,7 +91,7 @@
                 <h3> Roasted Pizza</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
 
             <div class="card">
@@ -100,7 +104,7 @@
                 <h3> Biryani</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
 
             <div class="card">
@@ -113,7 +117,7 @@
                 <h3> Fried Rice</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
 
             <div class="card">
@@ -126,7 +130,7 @@
                 <h3> Garlic bread</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -138,7 +142,7 @@
                 <h3>Lobster</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -150,7 +154,7 @@
                 <h3> butter-naan</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -162,7 +166,7 @@
                 <h3> Fried-Fish</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -174,7 +178,7 @@
                 <h3> prawn</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -186,7 +190,7 @@
                 <h3> paneer</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -198,12 +202,20 @@
                 <h3> pasta</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     beatae?</p>
-                    <button class="btns">Order Now</button>
+                <button class="btns">Order Now</button>
             </div>
 
         </div>
 
     </section>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const links = document.querySelector(".links")
+        navToggle.addEventListener("click", function () {
+            links.classList.toggle("show-links");
+        });
+    </script>
 </body>
 
 </html>
