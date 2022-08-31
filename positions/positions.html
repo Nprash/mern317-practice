@@ -46,10 +46,22 @@
 
         .box-1,
         .box-2,
-        .box-3 {
+        .box-3,
+        .box-5 {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .box-5{
+            background: rgb(159, 60, 252);
+            padding: 20px;
+        }
+        .box-6{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: blue;
         }
 
         div {
@@ -63,6 +75,9 @@
 
             background: rgb(198, 218, 168);
         }
+
+
+        
     </style>
 </head>
 
@@ -125,7 +140,21 @@
             left: 0px;
             bottom: 0px;
         }
+        .box-5{
+            position: absolute;
+        }
+        .box-6{
+            position: relative;
+            left: 100px;
+        }
     </style>
+    <div class="d2">
+        <div class="box-5">
+            <div class="box-6">
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
