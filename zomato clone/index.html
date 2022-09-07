@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>Zomato</title>
@@ -36,7 +39,7 @@
         </header>
     </div>
 
-    <div class="bg-img-with-content">
+    <div class="baground-img-with-content">
         <div class="background-image">
             <img src="background-image.png" alt="background-image" class="background-img">
         </div>
@@ -48,7 +51,7 @@
 
             <div class="search-container">
                 <div class="search-bar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                         <path
                             d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -78,69 +81,88 @@
 
     <div class="card-holder">
         <div class="card-container-1">
-            <a href="#"><img src="card-img.png" alt="card-img" class="image-logo"></a>
-            <div class="text-descript">
-                <p class="order-text">Order Online</p>
-                <p class="sub-text">Stay home and order to your doorstep</p>
+            <div class="img-container-with-text">
+                <a href="#"><img src="card-img.png" alt="card-img" class="image-logo"></a>
+                <div class="text-descript">
+                    <p class="order-text">Order Online</p>
+                    <p class="sub-text">Stay home and order to your doorstep</p>
+                </div>
             </div>
         </div>
 
         <div class="card-container-2">
             <p class="text-line">Popular localities in and around <span style="color:black">Srikakulam</span> </p>
             <div class="text-card">
-                <h3 class="sklm">Srikakulam Locality</h3>
-                <p class="places">157 Places</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                </svg>
+                <div class="text-div">
+                    <h5 class="sklm">Srikakulam Locality</h5>
+                    <p class="places">158 Places</p>
+                </div>
+                <div class="for-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="13" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
             </div>
         </div>
 
     </div>
 
-    <div class="p-c-content">
-        <img src="mobile.png" alt="mobile-img" class="img-2">
-        <span class="forline"></span>
-        <div class="right-content">
-            <h2 class="getapp">Get the Zomato app </h2>
-            <p class="theapp">We will send you a link, open it on your phone to download <br> the app</p>
-
-            <div class="options">
-                <section class="selection">
-                    <input type="radio" name="radio" id="Email" label="Email" value="Email" class="opt-1">
-                    <label class="Email"> Email</label>
-                </section>
-                <section class="selection">
-                    <input type="radio" id="Phone" label="Phone" value="Phole" class="opt-1">
-                    <label for="Phone">Phone</label>
-                </section>
+    <div class="middle-content">
+        <section class="actual-content">
+            <div class="left-content">
+                <div class="for-image-contain">
+                    <img src="mobile.png" alt="mobile-img" class="mobile-image">
+                </div>
+                <span class="forline"></span>
             </div>
 
-            <div class="search-container-2">
+            <div class="right-content">
+                <div class="sub-content">
+                    <h2 class="getapp">Get the Zomato app </h2>
+                    <p class="theapp">We will send you a link, open it on your phone to download <br> the app</p>
 
-                <input type="text" placeholder="Email" class="search-222">
-                <button class="share">
-                    Share App Link
-                </button>
+                    <div class="options">
+                        <div class="select">
+                            <input type="radio" name="radio" id="Email" label="Email" value="Email" class="opt-1">
+                            <label class="Email"> Email</label>
+                        </div>
+                        <div class="select">
+                            <input type="radio" name="radio" id="Phone" label="Phone" value="Phole" class="opt-1">
+                            <label for="Phone">Phone</label>
+                        </div>
+
+                    </div>
+
+                    <div class="search-container-2">
+
+                        <input type="text" placeholder="Email" class="searchbox-2">
+                        <button class="share-btn">
+                            Share App Link
+                        </button>
+                    </div>
+
+                    <p class="download-text">Download app from</p>
+
+                    <div class="download-links">
+
+                        <a href="#" class="imglink-1"><img src="playstore.png" alt="play-store"
+                                class="download-link1"></a>
+                        <a href="#" class="imglink-2"><img src="A-appstore.png" alt="app-store"
+                                class="download-link2"></a>
+                    </div>
+                </div>
+
             </div>
-
-            <p class="dwn-ins">Download app from</p>
-
-            <div class="dwn-links">
-                <a href="#" class="l-1"><img src="playstore.png" alt="play-store" class="dwn-links1"></a>
-                <a href="#" class="l-1"><img src="A-appstore.png" alt="app-store" class="dwn-links2"></a>
-            </div>
-
-        </div>
+        </section>
 
     </div>
 
-    <div class="B-text">
-        <span class="explore">Explore options near me</span>
+    <div class="explore-content">
+        <p class="explore">Explore options near me</p>
 
-        <div class="t-1">
+        <div class="populor-card-1">
             <h5 class="h-5">Popular cuisines near me</h5>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -149,7 +171,7 @@
             </svg>
         </div>
 
-        <div class="t-2">
+        <div class="populor-card-2">
             <h5 class="h-5">Popular restaurant types near me</h5>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -158,7 +180,7 @@
             </svg>
         </div>
 
-        <div class="t-3">
+        <div class="populor-card-3">
             <h5 class="h-5">Cities we deliver To</h5>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -169,16 +191,17 @@
 
     </div>
 
-    <footer class="bottom">
+    <footer class="bottom-section">
 
-        <div class="division">
+        <div class="entire-division">
+
             <section class="row-1">
-                <img src="b-logo.png" alt="">
+                <img src="lastlogo.png" class="last-zomato-logo" alt="">
 
-                <section class="row-a">
-                    <div class="1b">
+                <div class="sub-tiny-row1">
+                    <div class="india-with-svg">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
                             viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
                             <g>
                                 <path fill="#FFFFFF" d="M400,421.505c11.859,0,21.506-9.646,21.506-21.505c0-11.859-9.646-21.505-21.506-21.505
@@ -212,8 +235,8 @@
                         </svg>
                     </div>
 
-                    <div class="1b">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <div class="english-with-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-globe" viewBox="0 0 16 16">
                             <path
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
@@ -227,115 +250,116 @@
                         </svg>
                     </div>
 
-                </section>
+                </div>
 
             </section>
 
-            <div class="b-division">
+            <div class="second-division">
 
-                <div class="about zomoto">
-                    <h6 class="text-l"> About Zomato</h6>
+            <div class="about-zomoto">
+                <h2 class="final-text-line"> About Zomato</h2>
+                <nav>
+                    <a href="#">
+                        <p class="who">Who We Are</p>
+                    </a>
+                    <a href="#">
+                        <p class="blog">Blog</p>
+                    </a>
+                    <a href="#">
+                        <p class="work">Work With Us</p>
+                    </a>
+                    <a href="#">
+                        <p class="investor">Investor Relations</p>
+                    </a>
+                    <a href="#">
+                        <p class="report">Report Fraud</p>
+                    </a>
+                    <a href="#">
+                        <p class="contact">Contact Us</p>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="zomaverse">
+                <h6 class="final-text-line">ZomaverseFor</h6>
+                <nav>
+                    <a href="#">
+                        <p class="who">Zomato</p>
+                    </a>
+                    <a href="#">
+                        <p class="blog">Feeding India</p>
+                    </a>
+                    <a href="#">
+                        <p class="work">Hyperpure</p>
+                    </a>
+                    <a href="#">
+                        <p class="investor">Zomaland</p>
+                    </a>
+
+                </nav>
+            </div>
+
+
+
+            <div class="3rd-column">
+
+                <div class="Restaurants">
+                    <h6 class="final-text-line">Restaurants</h6>
                     <nav>
                         <a href="#">
-                            <p class="who">Who We Are</p>
+                            <p class="who">Partner With Us</p>
                         </a>
                         <a href="#">
-                            <p class="blog">Blog</p>
-                        </a>
-                        <a href="#">
-                            <p class="work">Work With Us</p>
-                        </a>
-                        <a href="#">
-                            <p class="investor">Investor Relations</p>
-                        </a>
-                        <a href="#">
-                            <p class="report">Report Fraud</p>
-                        </a>
-                        <a href="#">
-                            <p class="contact">Contact Us</p>
+                            <p class="blog">Apps For You</p>
                         </a>
                     </nav>
                 </div>
 
-                <div class="zomaverse">
-                    <h6 class="text-l">ZomaverseFor</h6>
+                <div class="enterprise">
+                    <h6 class="final-text-line">Enterprise</h6>
                     <nav>
                         <a href="#">
-                            <p class="who">Zomato</p>
+                            <p class="who">Zomato For Work</p>
                         </a>
-                        <a href="#">
-                            <p class="blog">Feeding India</p>
-                        </a>
-                        <a href="#">
-                            <p class="work">Hyperpure</p>
-                        </a>
-                        <a href="#">
-                            <p class="investor">Zomaland</p>
-                        </a>
-
                     </nav>
                 </div>
+            </div>
 
 
+            <div class="learn-more">
+                <h6 class="final-text-line">Learn More</h6>
+                <nav>
+                    <a href="#">
+                        <p class="who">Privecy</p>
+                    </a>
+                    <a href="#">
+                        <p class="blog">Security</p>
+                    </a>
+                    <a href="#">
+                        <p class="work">Terms</p>
+                    </a>
+                    <a href="#">
+                        <p class="investor">Sitemap</p>
+                    </a>
 
-                <div class="3rd-column">
+                </nav>
+            </div>
 
-                    <div class="Restaurants">
-                        <h6 class="text-l">Restaurants</h6>
-                        <nav>
-                            <a href="#">
-                                <p class="who">Partner With Us</p>
-                            </a>
-                            <a href="#">
-                                <p class="blog">Apps For You</p>
-                            </a>
-                        </nav>
-                    </div>
 
-                    <div class="enterprise">
-                        <h6 class="text-l">Enterprise</h6>
-                        <nav>
-                            <a href="#">
-                                <p class="who">Zomato For Work</p>
-                            </a>
-                        </nav>
-                    </div>
+            <div class="social-links">
+                <h6 class="final-text-line">social links</h6>
+                <div class="iconlinks">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
                 </div>
-
-
-                <div class="learn-more">
-                    <h6 class="text-l">Learn More</h6>
-                    <nav>
-                        <a href="#">
-                            <p class="who">Privecy</p>
-                        </a>
-                        <a href="#">
-                            <p class="blog">Security</p>
-                        </a>
-                        <a href="#">
-                            <p class="work">Terms</p>
-                        </a>
-                        <a href="#">
-                            <p class="investor">Sitemap</p>
-                        </a>
-
-                    </nav>
-                </div>
-
-
-                <div class="social-links">
-                    <div class="iconlinks">
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </div>
-                    <section class="img-links">
-                        <a href="#"><img src="A-appstore.png" alt="appstore"></a>
-                        <a href="#"><img src="playstore.png" alt="appstore"></a>
-                    </section>
-                </div>
+                <section class="img-links">
+                    <a href="#"><img src="A-appstore.png" alt="appstore"></a>
+                    <a href="#"><img src="playstore.png" alt="appstore"></a>
+                </section>
+            </div>
 
 
             </div>
@@ -345,11 +369,6 @@
                 Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All
                 rights reserved.
             </p>
-
-
-
-
-
         </div>
 
     </footer>
