@@ -1,4 +1,3 @@
-
 *,
 ::after,
 ::before {
@@ -9,10 +8,10 @@
     list-style-type: none;
 }
 
-/* 
+
 body {
     font-family: Okra, Helvetica, sans-serif;
-} */
+}
 
 .head-section {
     box-shadow: rgb(232 232 232) 0px -0.5px 0px inset;
@@ -73,10 +72,12 @@ body {
 }
 
 .nav-bar .end_links ul li a {
-    color: white;
-    font-size: 20px;
+    font-family: Okra, Helvetica, sans-serif;
+    transform: scale(0.9, 0.89);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     cursor: pointer;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .baground-img-with-content {
@@ -226,7 +227,7 @@ body {
 }
 
 .img-container-with-text {
-    width: 550px;
+    width: 580px;
     height: 230px;
     border-radius: 12px;
     border: 1px solid lightgrey;
@@ -346,7 +347,7 @@ body {
 .left-content {
     position: absolute;
     width: 280px;
-    height: 430px;
+    height: 450px;
     top: 30px;
     left: 100px;
     /* display:flex; */
@@ -383,7 +384,7 @@ body {
 .right-content {
     position: absolute;
     width: 520px;
-    height: 430px;
+    height: 450px;
     /* border: 1px solid orange; */
     /* display: inline-flex; */
     flex-direction: column;
@@ -447,6 +448,7 @@ body {
     width: 100%;
     /* color: #1C1C1C; */
     -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     cursor: pointer;
     /* margin-left: 10px; */
 }
@@ -579,13 +581,17 @@ input::placeholder {
     font-weight: 100;
     color: rgb(87, 86, 86);
     padding: 25px;
-    cursor:pointer;
-    border-radius:8px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .h-5 {
     width: 99%;
+    font-family: Okra, Helvetica, Sans-Serif;
+    font-weight: 400;
+
 }
+
 .populor-card-2 {
     position: absolute;
     top: 250px;
@@ -601,8 +607,8 @@ input::placeholder {
     font-weight: 100;
     color: rgb(87, 86, 86);
     padding: 25px;
-    cursor:pointer;
-    border-radius:8px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .populor-card-3 {
@@ -620,14 +626,15 @@ input::placeholder {
     font-weight: 100;
     color: rgb(87, 86, 86);
     padding: 25px;
-    cursor:pointer;
-    border-radius:8px;
+    cursor: pointer;
+    border-radius: 8px;
 }
-.bi-chevron-down{
+
+.bi-chevron-down {
     color: black;
 }
 
-.bottom-section{
+.bottom-section {
     position: relative;
     top: 250px;
     width: 100%;
@@ -636,7 +643,8 @@ input::placeholder {
     align-items: center;
     background: rgb(248, 248, 248);
 }
-.entire-division{
+
+.entire-division {
     /* position: absolute; */
     /* left: 75px; */
     width: 90%;
@@ -648,24 +656,27 @@ input::placeholder {
     flex-direction: column;
     padding: 50px 0px;
 }
-.row-1{
+
+.row-1 {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
-.sub-tiny-row1{
+
+.sub-tiny-row1 {
     width: 300px;
     display: flex;
     justify-content: space-between;
 }
 
-.last-zomato-logo{
+.last-zomato-logo {
     width: 150px;
-    height:35px;
+    height: 35px;
     background: none;
 }
-.india-with-svg{
+
+.india-with-svg {
     width: 130px;
     height: 45px;
     border: 1px solid grey;
@@ -675,84 +686,185 @@ input::placeholder {
     border-radius: 8px;
 }
 
-.txt{
+.txt {
     font-family: Okra, Helvetica, Sans-Serif;
     font-size: 25px;
 }
 
 
-.english-with-svg{
+.english-with-svg {
     width: 150px;
-    height:45px;
+    height: 45px;
     border: 1px solid grey;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 8px;
 }
-.about-zomoto{
-    width: 200px;
-    height: 200px;
+
+.about-zomoto {
+    width: 250px;
+    height: 220px;
+    line-height: 1.5;
 }
-.final-text-line{
+
+.final-text-line {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 25px;
-    transform: scale(1, 0.59);
+    transform: scale(1, 0.999);
     letter-spacing: 2.5;
     text-transform: uppercase;
-    font: bolder;
+    font-weight: 1000;
     margin-bottom: 10px;
+    color: black;
 }
-.who{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: 5px 0px;
-    color: grey;
+.second-division {
+    display: flex;
+    justify-content: space-between;
 }
-.blog{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: 5px 0px;
-    color: grey;
-}
-.work{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: 5px 0px;
-    color: grey;
-}
-.investor{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: 5px 0px;
-    color: grey;
-}
-.report{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: 5px 0px;
-    color: grey;
-}
-.contact{
-    font-family: 'Times New Roman', Times, serif;
+.who {
+    font-family: Okra, Helvetica, Sans-Serif;
     font-size: 16px;
     margin: 5px 0px;
     color: grey;
 }
 
-.zomaverse{
-    width: 200px;
+.blog {
+    font-family: Okra, Helvetica, Sans-Serif;
+    font-size: 16px;
+    margin: 5px 0px;
+    color: grey;
+}
+
+.work {
+    font-family: Okra, Helvetica, Sans-Serif;
+    font-size: 16px;
+    margin: 5px 0px;
+    color: grey;
+}
+
+.investor {
+    font-family: Okra, Helvetica, Sans-Serif;
+    font-size: 16px;
+    margin: 5px 0px;
+    color: grey;
+}
+
+.report {
+    font-family: Okra, Helvetica, Sans-Serif;
+    font-size: 16px;
+    margin: 5px 0px;
+    color: grey;
+}
+
+.contact {
+    font-family: Okra, Helvetica, Sans-Serif;
+    font-size: 16px;
+    margin: 5px 0px;
+    color: grey;
+}
+
+.zomaverse {
+    width: 250px;
+    height: 220px;
+    line-height: 1.5;
+}
+
+.Restaurants{
+    width: 300px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.enterprise{
+    width: 300px;
+    height: 90px;
+}
+
+.column3 {
+    width: 300px;
+    height: 220px;
+}
+
+.learn-more {
+    width: 250px;
+    height: 220px;
+    line-height: 1.5;
+}
+
+.social-links {
+    width: 240px;
     height: 150px;
 }
 
-.second-division{
-    display:flex;
-    justify-content: space-between;
+.iconlinks {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
-.iconlinks{
-    width: 200px;
-    height: 40px;
-    display: inline-flex;
-    justify-content: ;
+.cvuzKA{
+    margin-right: 5px;
+}
+
+.bi-linkedin {
+    border-radius: 50px;
+    color: black;
+    background: white;
+    /* margin-right: 10px; */
+}
+.bi-instagram{
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+.bi-twitter{
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+.bi-youtube{
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+
+.bi-facebook{
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    padding: 2px;
+}
+.final-img-links{
+    width: 150px;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+}
+.final-image-1{
+    width: 100%;
+    height:50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.final-image-2{
+    width: 100%;
+    height:50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.get-margin{
+    margin-top: 50px;
+}
+.last-txt{
+    font-family: Okra, Helvetica, sans-serif;
+    color: grey;
+    letter-spacing: 1.5;
+    line-height: 1.5;
+    margin: 25px 0px 10px;
 }
