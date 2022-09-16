@@ -17,18 +17,23 @@
             <h3>Master The Concept of react js</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem officiis nihil nostrum repudiandae
                 aliquam consectetur voluptates delectus voluptatum! Porro.</p>
-            <input type="text" placeholder="Enter Your Name" id="name">
-            <input type="text" placeholder="Enter Your Email" id="email" onkeyup="checkdoubleentry()">
-            <p class="alert-msg" id="demo">user is already registered</p>
-            <button class="btn" onclick="register()">Register Now</button>
+            <form action="">
+                <!-- <input type="text"> -->
+                <input type="text" placeholder="Enter Your Name" id="name" required>
+                <input type="email" placeholder="Enter Your Email" id="email" onkeyup="checkdoubleentry()" required>
+                <p class="alert-msg" id="demo">user is already registered</p>
+                <button class="btn" onclick="register()">Register Now</button>
+            </form>
+
+
         </div>
         <!-- <input type="text" name="user-name" value="prasaaaaanth"> -->
     </div>
-    
+
 
 
     <div class="user-container" id="userContainer">
-        
+
 
     </div>
 
