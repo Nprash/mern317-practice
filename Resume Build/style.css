@@ -29,6 +29,8 @@ body{
     grid-template-columns: 1fr 2fr;
     padding: 40px;
     padding-bottom: 0;
+    /* background: #EEEEEE; */
+    /* clip-path: polygon(0 20%, 60% 20%, 61% 2%, 100% 50%, 60% 100%, 60% 86%, 1% 86%); */
 }
 .container .top .imgbox{
     position: relative;
@@ -80,7 +82,7 @@ body{
     padding: 0 20px 40px;
 }
 .container .contentBox h3{
-    border-left: 4px solid #ff8bb3;
+    border-left: 4px solid blue;
     padding-left: 10px;
     line-height: 1em;
     font-weight: 600;
@@ -107,14 +109,14 @@ body{
 .container .contentBox ul li ion-icon{
     font-size: 1.2em;
     margin-right: 10px;
-    color: #3590d2;
+    color: #21BF73;
 }
 .container .contentBox ul.education li{ /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
     flex-direction: column; 
     margin: 25px 0;
 }
 h5{
-    color: #3590d2;
+    color: blue;
 }
 h4{
     color: #333;
@@ -150,7 +152,7 @@ h6{
     top: 0;
     left: 0;
     height: 90%;
-    background: #3590d2;
+    background: #21BF73;
 }
 .container .contentBox ul.interest{/*here targeting class use ul.education or directly use .education class with li to get column alignment*/
     position: relative;
@@ -167,7 +169,7 @@ h6{
     position:relative;
     width: 40px;
     height: 40px;
-    background: #3590d2;
+    background: #21BF73;
     color: #fff;
     border-radius: 5px;
     display: flex;
@@ -198,10 +200,10 @@ p{
     font-weight: 600;
 }
 .about .box .year_company h5:nth-child(1){
-    color: #3590d2;
+    color: blue;
 }
 .about .box .text h4{
-    color: #3590d2;
+    color: blue;
     font-size: 16px;
     margin: 0;
 }
@@ -230,11 +232,9 @@ p{
     top: 0;
     left: 0;
     height: 100%;
-    background: #3590d2;
+    background: #21BF73;
 }
-.courses ul.course-list li{
 
-}
 .about.courses ul.courselist li{
     list-style: none;
     margin: 8px 0;
@@ -245,7 +245,7 @@ p{
 .about.courses ul.courselist li ion-icon{
     font-size: 1.2em;
     margin-right: 8px;
-    color: #3590d2;
+    color: #21BF73;
 }
 .container .contentBox ul{
     position: relative;
@@ -256,11 +256,6 @@ p{
     line-height: 1em;
     color: #333;
     display: flex;
-}
-.container .contentBox ul li ion-icon{
-    font-size: 1.2em;
-    margin-right: 10px;
-    color: #3590d2;
 }
 
 
