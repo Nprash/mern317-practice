@@ -7,9 +7,9 @@ roll= () =>{
     setTimeout(()=>{
         let dicevalue = Math.floor(Math.random()*6);
         document.getElementById('dice-id').innerHTML = dicevalue
-    },3000)
+    },2000)
     setTimeout(()=>{
     document.getElementById('dice').classList.remove('dice-animation');
 
-    },3000)
+    },2000)
 }
