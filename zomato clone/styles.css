@@ -171,8 +171,10 @@ body {
 }
 
 .bi-geo-alt-fill {
-    /* position: relative; */
-    left: 0px;
+    position: relative;
+    padding: 5px;
+    /* font-size: 40px; */
+    /* left: 5px; */
     color: rgb(252, 134, 146)
 }
 
@@ -335,11 +337,11 @@ body {
     height: 500px;
     top: 30px;
     display: flex;
-    right: 200px;
+    right: 150px;
     box-sizing: border-box;
     /* flex-grow: ; */
     /* flex-direction:row; */
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     /* padding: 0 10px; */
 }
@@ -349,7 +351,7 @@ body {
     width: 280px;
     height: 450px;
     top: 30px;
-    left: 100px;
+    /* left: 30px; */
     /* display:flex; */
     align-items: flex-end;
     /* border-bottom: 1px solid red; */
@@ -357,9 +359,9 @@ body {
 
 .for-image-contain {
     position: relative;
-    width: 300px;
+    width: fit-content;
     height: 320px;
-    top: 100px;
+    top: 80px;
     /* width: 100%; */
     /* height: 100%; */
     /* object-fit: cover; */
@@ -371,7 +373,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: flex;
+    /* display: flex; */
 }
 
 .forline {
@@ -383,17 +385,12 @@ body {
 
 .right-content {
     position: absolute;
-    width: 520px;
+    width: fit-content;
     height: 450px;
-    /* border: 1px solid orange; */
-    /* display: inline-flex; */
     flex-direction: column;
-    /* flex-grow: 1; */
-    /* flex-flow: column wrap; */
-    /* align-content: stretch; */
-    /* justify-content: space-around; */
     right: 100px;
     top: 30px;
+    margin-left: 20px;
 }
 
 .sub-content {
@@ -401,9 +398,10 @@ body {
     width: 520px;
     /* height: 430px; */
     flex-direction: column;
-    /* align-content: stretch; */
+    justify-content: Center;
+    /* align-items: center; */
     position: relative;
-    top: 60px;
+    top: 30px;
     box-sizing: border-box;
 }
 
@@ -424,7 +422,8 @@ body {
     /* display: flex; */
     align-items: center;
     font-weight: 100;
-    color: #1C1C1C;
+    color: grey;
+
     line-height: 1.5;
 }
 
@@ -436,10 +435,12 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
+    /* padding: 8px; */
 }
 
 .select {
     display: flex;
+    padding: 5px ;
     justify-content: space-between;
 }
 
@@ -458,7 +459,7 @@ label {
     /* transform: scale(0.7, 0.9); */
     font-size: 20px;
     font-weight: 100;
-    color: #1C1C1C;
+    color: grey;
     cursor: pointer;
     margin-left: 8px;
     font: lighter;
@@ -561,8 +562,8 @@ input::placeholder {
 .explore {
     width: 100%;
     font-family: Okra, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 100;
+    font-size: 35px;
+    font-weight: 545;
     color: rgb(63, 63, 63);
     margin-bottom: 20px;
 }
@@ -665,9 +666,10 @@ input::placeholder {
 }
 
 .sub-tiny-row1 {
-    width: 300px;
+    width: 270px;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .last-zomato-logo {
@@ -677,24 +679,27 @@ input::placeholder {
 }
 
 .india-with-svg {
-    width: 130px;
-    height: 45px;
+    width: 120px;
+    height: 42px;
     border: 1px solid grey;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 8px;
 }
-
+/* #capa_1{
+    border: none;
+} */
 .txt {
     font-family: Okra, Helvetica, Sans-Serif;
-    font-size: 25px;
+    font-size: 20px;
+    color: grey;
 }
 
 
 .english-with-svg {
-    width: 150px;
-    height: 45px;
+    width: 130px;
+    height: 42px;
     border: 1px solid grey;
     display: inline-flex;
     justify-content: space-around;
@@ -702,26 +707,31 @@ input::placeholder {
     border-radius: 8px;
 }
 
-.about-zomoto {
-    width: 250px;
-    height: 220px;
-    line-height: 1.5;
-}
 
 .final-text-line {
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 25px;
-    transform: scale(1, 0.999);
-    letter-spacing: 2.5;
+    font-size: 27px;
+    transform: scale(0.8, 0.49);
+    letter-spacing: 3;
     text-transform: uppercase;
-    font-weight: 1000;
+    font-weight: bolder;
     margin-bottom: 10px;
     color: black;
+    position: relative;
+    right: 20px;
 }
 .second-division {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
+.about-zomoto {
+    width: 200px;
+    height: 220px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
 .who {
     font-family: Okra, Helvetica, Sans-Serif;
     font-size: 16px;
@@ -765,39 +775,39 @@ input::placeholder {
 }
 
 .zomaverse {
-    width: 250px;
+    width: 230px;
     height: 220px;
     line-height: 1.5;
 }
 
 .Restaurants{
-    width: 300px;
+    width: 280px;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 .enterprise{
-    width: 300px;
+    width: 280px;
     height: 90px;
 }
 
 .column3 {
-    width: 300px;
+    width: 280px;
     height: 220px;
 }
 
 .learn-more {
-    width: 250px;
+    width: 220px;
     height: 220px;
     line-height: 1.5;
 }
 
 .social-links {
     width: 240px;
-    height: 150px;
+    height: 220px;
 }
 
 .iconlinks {
-    width: 300px;
+    width: 240px;
     height: 40px;
     display: flex;
     justify-content: flex-start;
@@ -812,7 +822,6 @@ input::placeholder {
     border-radius: 50px;
     color: black;
     background: white;
-    /* margin-right: 10px; */
 }
 .bi-instagram{
     border-radius: 50%;
