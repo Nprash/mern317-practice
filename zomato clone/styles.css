@@ -9,9 +9,9 @@
 }
 
 
-body {
+/* body {
     font-family: Okra, Helvetica, sans-serif;
-}
+} */
 
 .head-section {
     box-shadow: rgb(232 232 232) 0px -0.5px 0px inset;
@@ -44,6 +44,7 @@ body {
 } */
 
 .starting_links {
+    
     display: flex;
     padding: 8px 12px;
     color: #fff;
@@ -52,6 +53,8 @@ body {
 }
 
 .starting_links a {
+    font-family: Okra, Helvetica, sans-serif;
+    font-weight: 600;
     color: #fff;
     font-weight: 100;
 }
@@ -66,18 +69,20 @@ body {
 .nav-bar .end_links ul li {
     display: inline-flex;
     justify-content: space-around;
-    padding: 8px 12px;
+    padding: 12px;
     font-weight: 100;
+    margin-right: 10px;
     /* text-align: left; */
 }
 
 .nav-bar .end_links ul li a {
     font-family: Okra, Helvetica, sans-serif;
-    transform: scale(0.9, 0.89);
+    /* transform: scale(0.9, 0.89); */
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    letter-spacing: 2px;
+    font-size: 18px;
     cursor: pointer;
-    font-weight: 300;
+    /* font-weight: 100; */
 }
 
 .baground-img-with-content {
@@ -106,8 +111,8 @@ body {
 .content-wrapper {
     position: absolute;
     width: 100%;
-    height: 250px;
-    top: 110px;
+    /* height: ; */
+    top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,27 +124,24 @@ body {
     height: 68px;
 }
 
-.for-h1 {
+.content-wrapper .for-h1 {
     font-family: Okra, Helvetica, sans-serif;
-    letter-spacing: 1.5;
-    width: 60%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 40px;
+    letter-spacing: normal;
+    width: fit-content;
+    transform: scale(1.1, 0.9);
+    margin-top: 30px;
+    /* line-height: 43px; */
+    font-size: 36px;
+    font-weight: lighter;
     color: #fff;
-    bottom: 0px;
-    text-align: center;
-    font-weight: 10;
-    font: 100px;
 }
 
 .search-container {
     display: flex;
-    bottom: 0;
+    /* position: relative; */
+    margin-top: 30px;
     width: 60%;
-    height: 100%;
+    /* height: 100%; */
     align-items: end;
     justify-content: center;
 }
@@ -249,6 +251,8 @@ body {
 }
 
 .order-text {
+    font-family: Okra, Helvetica, sans-serif;
+    
     font: bold;
     font-size: 20px;
     font-weight: 500;
@@ -258,6 +262,7 @@ body {
 
 .sub-text {
     color: rgb(92, 90, 90);
+    font-family: Okra, Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -298,15 +303,16 @@ body {
 }
 
 .sklm {
+    font-family: Okra, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: normal;
-    font-family: Okra, Helvetica, sans-serif;
     left: 10px;
     letter-spacing: 1.5;
     color: rgb(70, 69, 69);
 }
 
 .places {
+    font-family: Okra, Helvetica, sans-serif;
     font-size: 20px;
     letter-spacing: 1.5;
     color: rgb(99, 97, 97);
@@ -407,10 +413,10 @@ body {
 
 .getapp {
     font-family: Okra, Helvetica, sans-serif;
-    font-size: 55px;
+    font-size: 45px;
     width: 520px;
-    font-weight: 100;
-    letter-spacing: 2;
+    font-weight: 500;
+    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
