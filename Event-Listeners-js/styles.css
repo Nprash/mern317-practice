@@ -1,0 +1,16 @@
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w-50{
+    width: 50%;
+    height: 200px;
+}
+.bg1{
+    background-color: antiquewhite;
+}
+.bg2{
+    background-color: aquamarine;
+}
