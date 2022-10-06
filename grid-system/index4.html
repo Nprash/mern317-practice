@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-Grid System</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+            justify-items: stretch; /*it aligns horizantally {center, end,start,stretch}*/
+            align-items: stretch;/*it aligns vertically {center, end,start,stretch}*/
+        
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+        .box1{
+            /* align-self: start; */
+            grid-column: 1/3; /*it exapands to starting point of 3rd column*/
+            grid-row: 1/3;
+        
+        }
+        .box2{
+            /* align-self: end; */
+            grid-row: 1/3; /*it expands from 1node to 3node*/
+        }
+        .box3{
+            /* justify-self: end; */
+            grid-column: 2/4; /*it expands from 2 to 4th node or position, or starting positio fo 4*/
+            grid-row: 3; /*it stays i  row 3*/
+        }
+        .box4{
+            grid-column: 1;
+            grid-row: 2/4; /*it expands from 2 to starting of 4*/
+            border: 1px solid #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="example">
+        <img src="grid2.png" alt="">
+    </div>
+    <div class="wrapper">
+        <div class="box box1">box-1</div>
+        <div class="box box2">box-2</div>
+        <div class="box box3">box-3</div>
+        <div class="box box4">box-4</div>
+    </div>
+
+
+    <div></div>
+</body>
+</html>

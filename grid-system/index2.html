@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-Grid System</title>
+    <style>
+        .reference{
+            width: 300px;
+            padding: 15px;
+            /* border-radius: 20px; */
+        }
+        .bg{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em; /* it gives gap between columns*/
+            grid-row-gap: 1em; /* it gives gap between rows */
+            grid-gap: 1em;
+
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="reference">
+        <img src="grid.png" class="bg" alt="">
+    </div>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae, sequi perferendis beatae repellendus vero sunt nam, amet corrupti debitis porro facilis odit quis explicabo doloribus mollitia temporibus. Inventore accusamus vero atque dolorem porro rem incidunt modi! Similique recusandae doloribus sed voluptates eveniet, blanditiis, error eius corrupti commodi, laborum expedita repellendus! Ex quo omnis necessitatibus quisquam laudantium quos nihil, asperiores provident, inventore nam veniam ipsum modi voluptates ducimus, excepturi nobis!
+        </div>
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque omnis totam corrupti soluta et. Ipsum deserunt pariatur vitae impedit sunt velit, quisquam id reiciendis voluptatem aspernatur quibusdam commodi optio? Modi alias illum quibusdam officiis!
+            
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae, sequi perferendis beatae repellendus vero sunt nam, amet corrupti debitis porro facilis odit quis explicabo doloribus mollitia temporibus. Inventore accusamus vero atque dolorem porro rem incidunt modi! Similique recusandae doloribus sed voluptates eveniet, blanditiis, error eius corrupti commodi, laborum expedita repellendus! Ex quo omnis necessitatibus quisquam laudantium quos nihil, asperiores provident, inventore nam veniam ipsum modi voluptates ducimus, excepturi nobis!
+        </div>
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque omnis totam corrupti soluta et. Ipsum deserunt pariatur vitae impedit sunt velit, quisquam id reiciendis voluptatem aspernatur quibusdam commodi optio? Modi alias illum quibusdam officiis!
+
+        </div>
+        
+    </div>
+</body>
+</html>

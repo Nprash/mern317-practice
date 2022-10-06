@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /*grid-template-columns: 1fr 2fr 1fr;*/  /* 1fr 2fr 1frthe middle part will be little bigger size then the other*/
+            grid-template-columns: repeat(3, 1fr);  /*2 columns with size of 1fr 2fr for every 2columns the given size(1fr 2fr) will repeat*/
+            grid-gap: 1em; /* it gives gap between rows and column*/
+            /*grid-auto-rows: 100px;*/ /*it gives the height*/
+            grid-auto-rows: minmax(100px, auto); /*it gives rows height suitable height for all columns, but default will be 100px*/
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 30px;
+            grid-gap: 1em;
+            padding: 1em;
+        }
+        .nested > div{
+            border: #333 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nested">
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            <div>Lorem ipsum dolo.</div>
+            
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quisquam id exercitationem doloribus ab, corrupti inventore dolorum soluta et dignissimos tempore ullam magnam minima. Architecto, eos dolores nam, beatae nulla in assumenda, alias omnis voluptatibus quam nisi quibusdam odio placeat.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+    <div style="color:green; margin-top:30px; width:300px;">
+        this is  row height increment by grid-auto-rows- (100px, auto)---> 100px default height forr all the columns but when content is more height then the given 100px tere height will be auto applied
+    </div>
+</body>
+</html>
