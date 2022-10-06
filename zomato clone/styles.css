@@ -71,7 +71,7 @@
     justify-content: space-around;
     padding: 12px;
     font-weight: 100;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     /* text-align: left; */
 }
 
@@ -80,7 +80,7 @@
     /* transform: scale(0.9, 0.89); */
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 19px;
     cursor: pointer;
     /* font-weight: 100; */
 }

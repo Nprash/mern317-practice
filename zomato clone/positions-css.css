@@ -3,10 +3,10 @@ body{
     margin: 0%;
 }
 .main-container{
+    position: relative;
     width: 100vw;
     height: 450px;
     background-color: blueviolet;
-    position: relative;
     top: 0px;
 }
 
