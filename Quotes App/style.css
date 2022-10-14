@@ -1,0 +1,20 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.forclip{
+    width: 100vw;
+    height: 90vh;
+    background-color: dodgerblue;
+    clip-path: polygon(0 0, 100% 0%, 100% 38%, 0% 100%);
+    z-index: -1;
+    position: absolute;
+}
+
+.card-width{
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
