@@ -58,9 +58,9 @@ renderRequestedQuotes = (event) => {
             listquote.appendChild(storequote);
             storequote.innerHTML = requestedquote;
             console.log(requestedquote)
-            storequote=setTimeout(()=>{
+            setTimeout(()=>{
                 storequote.classList.add("foralert")
-            },20000)
+            },2000)
         })
 }
 requestedquote="";
