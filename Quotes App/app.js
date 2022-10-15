@@ -32,11 +32,8 @@ fetchrandomQuote = () => {
                     authorscontainer.appendChild(author);
                 }
             })
-
         });
-
     // let maincard = document.getElementById("cardid");
-
 }
 
 fetchrandomQuote();
@@ -53,9 +50,20 @@ renderRequestedQuotes = (event) => {
             let requestedquote = quote.filter((y) => {
                 return y.author == requestedauthor; // wwe aare filtering those author names
             })
+            // window.prompt(requestedquote)
             console.log(requestedquote)
+            let listquote = document.getElementById("listquote");
+            storequote = document.createElement('p');
+            storequote.classList.remove("foralert");
+            listquote.appendChild(storequote);
+            storequote.innerHTML = requestedquote;
+            console.log(requestedquote)
+            storequote=setTimeout(()=>{
+                storequote.classList.add("foralert")
+            },20000)
         })
 }
+requestedquote="";
 
 
 
