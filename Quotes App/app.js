@@ -1,10 +1,10 @@
 
-let randomauthors = [];
-
+//let randomauthors = []; //to collect 3 random authors in this array to show at display as output
+// When button was clicked the random quote and its author will present on the screen
 fetchrandomQuote = () => {
-    randomauthors = [];
+    // randomauthors = [];
 
-    fetch("https://type.fit/api/quotes")
+    fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
         .then(function (response) {
             return response.json();
         })
@@ -14,56 +14,122 @@ fetchrandomQuote = () => {
             //console.log(quote[randomnumber].text, quote[randomnumber].author); //bcz its an array so it contains index positions so we used square bracket to fetch the individual quote
             document.getElementById("Rquote").innerHTML = quote[randomnumber].text;
             document.getElementById("author").innerHTML = quote[randomnumber].author
-            randomauthors.push((quote[randomnumber].author)) // we want 3 author names on the screen so we used 3 times push over here
-            randomauthors.push((quote[randomnumber + 3].author))
-            randomauthors.push((quote[randomnumber + 6].author))
-            // console.log(randomauthors);
 
-            //to get authors names on the screen
 
-            let authorscontainer = document.getElementById("authors-container");
-            authorscontainer.innerHTML = "";
-            randomauthors.map((x) => {
-                if (x != null) {
-                    let author = document.createElement('div');
-                    author.classList.add("author");
-                    author.addEventListener('click', renderRequestedQuotes) // when we click on any of author name we will get quotes 
-                    author.innerHTML = x;
-                    authorscontainer.appendChild(author);
-                }
-            })
+            function renderRandomAuthor() {
+                let randomauthors = [];
+
+                fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (quote) {
+                        let randomnumber = Math.floor(Math.random() * quote.length);
+                        randomauthors.push(quote[randomnumber].author);
+                        // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
+                        randomauthors.push(quote[randomnumber - 3].author);
+                        randomauthors.push(quote[randomnumber - 9].author);
+
+                        //to show/rander these 3authors names on the screen
+                        let authorscontainer = document.getElementById("authors-container");
+                        authorscontainer.innerHTML = "";
+                        // console.log(authorscontainer); we are getting empty authorscontainer div
+                        randomauthors.map((x) => {
+                            if (x != null) {
+                                let author = document.createElement('div');
+                                author.classList.add("author");
+                                author.innerHTML = x;
+                                author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
+                                authorscontainer.appendChild(author);
+
+                            }
+                        })
+                    })
+
+            }
+            renderRandomAuthor();
+
         });
+
     // let maincard = document.getElementById("cardid");
 }
-
 fetchrandomQuote();
+// renderRandomAuthor();
+
+
 
 renderRequestedQuotes = (event) => {
-    console.log(event.target.innerHTML);
+    // console.log(event.target.innerHTML);
     let requestedauthor = event.target.innerHTML;
+    // console.log(requestedauthor)
+    let authorname = document.getElementById("author-name").innerHTML = requestedauthor;//displyed this autor on h1 tag
+    let showquotescontainer = document.getElementById("showquotescontainer")
+    showquotescontainer.innerHTML = "";
+    // to generate random authors by invoking this function, which means when clicked on renderRequestedQuotes it creates new 3 authors every time
+
+
+    function renderRandomAuthor() {
+        let randomauthors = [];
+        fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (quote) {
+                let randomnumber = Math.floor(Math.random() * quote.length);
+                randomauthors.push(quote[randomnumber].author);
+                // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
+                randomauthors.push(quote[randomnumber - 3].author);
+                randomauthors.push(quote[randomnumber - 9].author);
+
+                //to show/rander these 3authors names on the screen
+                let authorscontainer = document.getElementById("authors-container");
+                authorscontainer.innerHTML = "";
+                // console.log(authorscontainer); we are getting empty authorscontainer div
+                randomauthors.map((x) => {
+                    if (x != null) {
+                        let author = document.createElement('div');
+                        author.classList.add("author");
+                        author.innerHTML = x;
+                        author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
+                        authorscontainer.appendChild(author);
+
+                    }
+                })
+            })
+
+    }
+    renderRandomAuthor();  // to get the random autor when triggered the random autors when clicked on
+
 
     fetch("https://type.fit/api/quotes")
         .then(function (response) {
             return response.json();
         })
         .then(function (quote) {
-            let requestedquote = quote.filter((y) => {
-                return y.author == requestedauthor; // wwe aare filtering those author names
+            let requestedquotes = quote.filter((x)=>{
+                return x.author == requestedauthor;
+            }).map((x)=>{
+                let div = document.createElement("div");
+                div.classList.add('listofquotes');
+                div.innerHTML = x.text;
+                showquotescontainer.appendChild(div);
             })
-            // window.prompt(requestedquote)
-            console.log(requestedquote)
-            let listquote = document.getElementById("listquote");
-            storequote = document.createElement('p');
-            storequote.classList.remove("foralert");
-            listquote.appendChild(storequote);
-            storequote.innerHTML = requestedquote;
-            console.log(requestedquote)
-            setTimeout(()=>{
-                storequote.classList.add("foralert")
-            },2000)
-        })
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
 }
-requestedquote="";
+requestedquote = "";
 
 
 
@@ -78,3 +144,6 @@ requestedquote="";
 //     .then(function (data) {
 //         console.log(data);
 //     });
+
+
+

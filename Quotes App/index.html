@@ -14,53 +14,64 @@
 
 <body>
 
-
-
-    
-    <div class="container-fluid forclip">
-        <!-- to collect authors names below -->
-
-        <div class="row justify-content-center">
-            <div class="col-md-4 fixed-height">
-                <h6>we are collecting authors name here for every click</h6>
-                <div id="authors-container">
-                </div>
-            </div>
+    <header>
+        <div class="stop">
+            <marquee behavior="slide" direction="right" loop="1">
+            <h1 class="title">Welcome to the quotes application</h1>
+            </marquee>
         </div>
+    </header>
 
+    <main>
+        <p class="info">Start clicking on authors name to read more quotes</p>
 
+        <div class="container-fluid">
+            <!-- to collect authors names below -->
 
-        <div class="row justify-content-around ">
-            <div class="col-lg-5">
-                <div class="card  p-3 shadow-lg my-height" id="cardid">
-
-                    <div class="content">
-                        <h2 class="ptag fs-4" id="Rquote"></h2>
-                        <p class="h4tag text-muted fs-5 fw-100 text-end" id="author"></p>
-                    </div>
-
-                    <div class="border-top btn-container pt-3">
-                        <button class="btn btn-outline-success rounded-1 p-2 positionabs" onclick="fetchrandomQuote()">Get Random
-                            Quote</button>
+            <div class="row justify-content-center">
+                <div class="col-md-4 fixed-height">
+                    <!-- <h6>we are collecting authors name here for every click</h6> -->
+                    <div id="authors-container">
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-7">
-                <div class="card" id="listquote">
-                    <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+
+
+            <div class="row justify-content-around ">
+                <div class="col-lg-5">
+                    <div class="card  p-3 shadow-lg my-height" id="cardid">
+
+                        <div class="content">
+                            <h4 class="ptag fs-4" id="Rquote"></h4>
+                            <p class="h4tag text-muted fs-5 fw-100 text-end" id="author"></p>
+                        </div>
+
+                        <div class="border-top btn-container pt-3">
+                            <button class="btn btn-outline-success rounded-1 p-2 positionabs"
+                                onclick="fetchrandomQuote()">Get Random
+                                Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <!-- <div class="card " id="listquote"> -->
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    <!-- </div> -->
+                    <h1 id="author-name"></h1>
+                    <div id="showquotescontainer"></div>
                 </div>
             </div>
+
+
+
+
         </div>
 
+    </main>
 
 
-
-    </div>
-
-
-
-    <!-- <input type="text" class="form-control is-invalid mt-5"> -->
 
 
 
