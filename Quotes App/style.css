@@ -19,6 +19,7 @@ body {
 #authors-container {
     width: fit-content;
     display: flex;
+    cursor: pointer;
 }
 .info{
     text-align: center;
@@ -37,7 +38,10 @@ body {
     bottom: 0;
 }
 
-
+.demo{
+    display:inline-block;
+    white-space: nowrap;
+}
 
 .author {
     display: inline-block;
@@ -74,6 +78,34 @@ body {
     .listofquotes {
         margin-right: 35px;
     }
+    .stop{
+        width: 90vw;
+        /* display: flexbox; */
+        /* flex-direction: column; */
+        white-space: wrap;
+    }
+    .title{
+        margin: 20px;
+        width: 100%;
+        /* max-width:850px; */
+        text-align: center;
+    }
 
+}
+@media (max-width:540px){
+    #cardid{
+        /* visibility: hidden; */
+        display: none;
+    }
+    .stop{
+        width: 100vw;
+        /* display: flexbox; */
+        /* flex-direction: column; */
+        white-space: wrap;
+    }
+}
 
+#author-name{
+    width: fit-content;
+    text-align: center;
 }

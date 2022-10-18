@@ -15,40 +15,39 @@ fetchrandomQuote = () => {
             document.getElementById("Rquote").innerHTML = quote[randomnumber].text;
             document.getElementById("author").innerHTML = quote[randomnumber].author
 
+//this function has declared below as a globally, so we just called the function inside at last line            
 
-            function renderRandomAuthor() {
-                let randomauthors = [];
+            // function renderRandomAuthor() {
+            //     let randomauthors = [];
 
-                fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
-                    .then(function (response) {
-                        return response.json();
-                    })
-                    .then(function (quote) {
-                        let randomnumber = Math.floor(Math.random() * quote.length);
-                        randomauthors.push(quote[randomnumber].author);
-                        // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
-                        randomauthors.push(quote[randomnumber - 3].author);
-                        randomauthors.push(quote[randomnumber - 9].author);
+            //     fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
+            //         .then(function (response) {
+            //             return response.json();
+            //         })
+            //         .then(function (quote) {
+            //             let randomnumber = Math.floor(Math.random() * quote.length);
+            //             randomauthors.push(quote[randomnumber].author);
+            //             // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
+            //             randomauthors.push(quote[randomnumber - 3].author);
+            //             randomauthors.push(quote[randomnumber - 9].author);
 
-                        //to show/rander these 3authors names on the screen
-                        let authorscontainer = document.getElementById("authors-container");
-                        authorscontainer.innerHTML = "";
-                        // console.log(authorscontainer); we are getting empty authorscontainer div
-                        randomauthors.map((x) => {
-                            if (x != null) {
-                                let author = document.createElement('div');
-                                author.classList.add("author");
-                                author.innerHTML = x;
-                                author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
-                                authorscontainer.appendChild(author);
+            //             //to show/rander these 3authors names on the screen
+            //             let authorscontainer = document.getElementById("authors-container");
+            //             authorscontainer.innerHTML = "";
+            //             // console.log(authorscontainer); we are getting empty authorscontainer div
+            //             randomauthors.map((x) => {
+            //                 if (x != null) {
+            //                     let author = document.createElement('div');
+            //                     author.classList.add("author");
+            //                     author.innerHTML = x;
+            //                     author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
+            //                     authorscontainer.appendChild(author);
 
-                            }
-                        })
-                    })
-
-            }
+            //                 }
+            //             })
+            //         })
+            // }
             renderRandomAuthor();
-
         });
 
     // let maincard = document.getElementById("cardid");
@@ -68,36 +67,36 @@ renderRequestedQuotes = (event) => {
     // to generate random authors by invoking this function, which means when clicked on renderRequestedQuotes it creates new 3 authors every time
 
 
-    function renderRandomAuthor() {
-        let randomauthors = [];
-        fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (quote) {
-                let randomnumber = Math.floor(Math.random() * quote.length);
-                randomauthors.push(quote[randomnumber].author);
-                // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
-                randomauthors.push(quote[randomnumber - 3].author);
-                randomauthors.push(quote[randomnumber - 9].author);
+    // function renderRandomAuthor() {
+    //     let randomauthors = [];
+    //     fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
+    //         .then(function (response) {
+    //             return response.json();
+    //         })
+    //         .then(function (quote) {
+    //             let randomnumber = Math.floor(Math.random() * quote.length);
+    //             randomauthors.push(quote[randomnumber].author);
+    //             // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
+    //             randomauthors.push(quote[randomnumber - 3].author);
+    //             randomauthors.push(quote[randomnumber - 9].author);
 
-                //to show/rander these 3authors names on the screen
-                let authorscontainer = document.getElementById("authors-container");
-                authorscontainer.innerHTML = "";
-                // console.log(authorscontainer); we are getting empty authorscontainer div
-                randomauthors.map((x) => {
-                    if (x != null) {
-                        let author = document.createElement('div');
-                        author.classList.add("author");
-                        author.innerHTML = x;
-                        author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
-                        authorscontainer.appendChild(author);
+    //             //to show/rander these 3authors names on the screen
+    //             let authorscontainer = document.getElementById("authors-container");
+    //             authorscontainer.innerHTML = "";
+    //             // console.log(authorscontainer); we are getting empty authorscontainer div
+    //             randomauthors.map((x) => {
+    //                 if (x != null) {
+    //                     let author = document.createElement('div');
+    //                     author.classList.add("author");
+    //                     author.innerHTML = x;
+    //                     author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
+    //                     authorscontainer.appendChild(author);
 
-                    }
-                })
-            })
+    //                 }
+    //             })
+    //         })
 
-    }
+    // }
     renderRandomAuthor();  // to get the random autor when triggered the random autors when clicked on
 
 
@@ -114,24 +113,49 @@ renderRequestedQuotes = (event) => {
                 div.innerHTML = x.text;
                 showquotescontainer.appendChild(div);
             })
-
-
-
         });
-
-
-
-
-
-
-
-
-
-
 }
 requestedquote = "";
 
+//BELOW IS GLOBAL DECLARATION TO USE THIS INSIDE A FUNCTION
+function renderRandomAuthor() {
+    let randomauthors = [];
 
+    fetch("https://type.fit/api/quotes") // this contains json first we fetch after we split the data
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (quote) {
+            let randomnumber = Math.floor(Math.random() * quote.length);
+            randomauthors.push(quote[randomnumber].author);
+            // console.log(randomauthors); we are getting 1 random authhor we need to collect 3 random authors
+            randomauthors.push(quote[randomnumber - 3].author);
+            randomauthors.push(quote[randomnumber - 9].author);
+
+            //to show/rander these 3authors names on the screen
+            let authorscontainer = document.getElementById("authors-container");
+            authorscontainer.innerHTML = "";
+            // console.log(authorscontainer); we are getting empty authorscontainer div
+            randomauthors.map((x) => {
+                if (x != null) {
+                    let author = document.createElement('div');
+                    author.classList.add("demo");
+                    author.classList.add("bg-success");
+                    author.classList.add("rounded-1");
+                    author.classList.add("py-2");
+                    author.classList.add("px-3");
+                    author.classList.add("my-2");
+                    author.classList.add("text-light");
+                    author.classList.add("mx-2");
+                    
+                    author.innerHTML = x;
+                    author.addEventListener("click", renderRequestedQuotes); // when clicked on this author eventlistener triggered
+                    authorscontainer.appendChild(author);
+
+                }
+            })
+        })
+}
 
 
 
