@@ -34,9 +34,9 @@ body {
     height: 300px;
 }
 
-.positionabs {
+/* .positionabs {
     bottom: 0;
-}
+} */
 
 .demo{
     display:inline-block;
@@ -108,4 +108,45 @@ body {
 #author-name{
     width: fit-content;
     text-align: center;
+}
+
+/* .btnndesign{
+    position: absolute;
+    bottom: 0;
+} */
+
+.positionabs{
+    bottom: 0;
+    text-decoration: none;
+    background-color: #198754;
+    padding: 15px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+    color: #222;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: white;
+    /* z-index: -1; */
+}
+.positionabs::before{
+    content: "";
+    position: absolute;
+    background-color: lightgrey;
+    width: 0; /*20px*/
+    height: 0;/*20px*/
+    top: var(--yposition); /*50% */
+    left: var(--xposition); /* 50%; var used to get value from js   */
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /*it makes put the item center -50% for x-axix other one Y axis*/
+    transition: width .8s, height .8s; /*to get smooth*/
+}
+.positionabs:hover::before{
+    width: 600px;
+    height: 600px;
+}
+.positionabs span{
+    position: relative;
+    color: black;
 }

@@ -47,10 +47,10 @@
                             <p class="h4tag text-muted fs-5 fw-100 text-end" id="author"></p>
                         </div>
 
-                        <div class="border-top btn-container pt-3">
-                            <button class="btn btn-outline-success rounded-1 p-2 positionabs"
-                                onclick="fetchrandomQuote()">Get Random
-                                Quote</button>
+                        <div class="border-top btn-container pt-3 btnndesign">
+                            <button class="positionabs"
+                                onclick="fetchrandomQuote()"><span>Get Random
+                                Quote</span></button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,16 @@
 
     </main>
 
-
+    <script>
+        const btnEl = document.querySelector(".positionabs");
+        btnEl.addEventListener("mouseover",(e)=>{
+            const x= (e.pageX - btnEl.offsetLeft);
+            const y = (e.pageY - btnEl.offsetTop);
+            btnEl.style.setProperty("--xposition", x + "px");
+            btnEl.style.setProperty("--yposition", y + "px");
+            // console.log(x , y)
+        })
+    </script>
 
 
 
