@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 5rem;
+  top: 0;
+  position: fixed;
+}
+.navbar__logo {
+  box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 48px;
+  border-bottom-left-radius: 48px;
+}
+.navbar__links .link {
+  margin-right: 10px;
+  color: #eeeeee;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar__links .mybucket {
+  background: #17ADFF;
+  color: #eeeeee;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+  align-items: center;
+  z-index: 0;
+}
+.hero img {
+  display: flex;
+  margin: 20px;
+  width: 50%;
+  height: 500px;
+}
+.hero h2 {
+  font-size: 40px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: #120d0d;
+  background-image: linear-gradient(320deg, #17ADFF 20%, #FF0000 60%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-family: "Rubik Microbe";
+}
+
+.fooditems {
+  width: 90%;
+  margin: 40px auto;
+}/*# sourceMappingURL=style.css.map */
