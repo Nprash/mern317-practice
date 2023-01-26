@@ -7,15 +7,23 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(90deg, rgba(204, 216, 235, 1) 34%, rgba(222, 166, 240, 0.989233193277311) 77%);
 }
 
-.stop{
-    width: 78vw;
+/* .stop{
+    width: 100%;
+} */
+.title{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: wrap;
+    margin: 15px auto;
+    
 }
-
 #authors-container {
     width: fit-content;
     display: flex;
@@ -143,8 +151,8 @@ body {
     transition: width .8s, height .8s; /*to get smooth*/
 }
 .positionabs:hover::before{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 }
 .positionabs span{
     position: relative;
